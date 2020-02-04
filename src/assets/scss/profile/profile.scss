@@ -1,0 +1,29 @@
+.profile {
+  position: relative;
+  padding-top: 59px;
+  text-align: center;
+  &__wrapper {
+
+  }
+  &__form {
+
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  &__input {
+    &_container {
+
+    }
+    &_big {
+
+    }
+    &_middle {
+
+    }
+
+  }
+}

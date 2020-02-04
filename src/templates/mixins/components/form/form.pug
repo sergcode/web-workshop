@@ -1,0 +1,77 @@
+mixin form-profile
+  .profile__wrapper
+    form#profileForm.profile__form.needs-validation(method='post' action='' role='form' novalidate name='profileForm')
+      fieldset
+        .profile__row
+          .profile__input_container
+            input#profileFormUserName.profile__input_big(
+              type='text'
+              placeholder=""
+              form='profileForm'
+              autocomplete='off'
+              value='Шахворостов Сергей Владимирович'
+              pattern='^[a-zA-ZА-Яа-яЁё ]+$'
+              title='Имя может содержать только буквы'
+              name='username'
+              required
+            )
+            label(for='profileFormUserName') ФИО
+            .invalid-tooltip Введите Ваше ФИО
+
+          .profile__input_container
+            select#profileFormYearBirth.profile__input_middle(
+              form='profileForm'
+              title='Выберите свой год рождения'
+              name='year-birth'
+              required
+              placeholder=''
+              data-placeholder='Год рождения'
+            )
+              option(selected)
+              option 2020
+              option 2019
+              option 2018
+              option 2017
+              option 2016
+              option 2015
+              option 2014
+              option 2013
+              option 2012
+              option 2011
+              option 2010
+              option 2009
+              option 2008
+              option 2007
+              option 2006
+              option 2005
+              option 2004
+              option 2003
+              option 2002
+              option 2001
+              option 2000
+              option 1999
+              option 1998
+              option 1997
+              option 1996
+              option 1995
+              option 1994
+              option 1993
+              option 1992
+              option 1991
+              option 1990
+              option 1989
+              option 1988
+              option 1987
+              option 1986
+              option 1985
+              option 1984
+              option 1983
+              option 1982
+              option 1981
+              option 1980
+
+            .invalid-tooltip Введите Ваше ФИО
+
+
+
+

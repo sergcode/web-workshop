@@ -1,0 +1,51 @@
+header {
+
+  width: 100%;
+  max-width: 1170px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  top: 0;
+  position: fixed;
+  padding-top: 32px;
+  padding-bottom: 30px;
+  background-color: $white-rgba-three;
+  backdrop-filter: blur(4px);
+  nav {
+    padding-left: 134px;
+    padding-right: 134px;
+    ul {
+      grid-area: menu;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      list-style: none;
+      padding-left: 0;
+      li {
+        a {
+          text-decoration: none;
+          color: $blue-one;
+          font-size: 14px;
+          transition: all .2s ease;
+          position: relative;
+          &:hover {
+            color: $black-two;
+          }
+          &.active {
+            color: $black-two;
+          }
+        }
+        &:nth-child(2) {
+          padding-left: 74px;
+        }
+        &:nth-child(3) {
+          padding-left: 74px;
+        }
+        &:nth-child(4) {
+          padding-left: 74px;
+        }
+      }
+    }
+  }
+
+}
+
