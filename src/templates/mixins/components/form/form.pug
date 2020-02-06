@@ -3,23 +3,23 @@ mixin form-profile
     form#profileForm.profile__form.needs-validation(method='post' action='' role='form' novalidate name='profileForm')
       fieldset
         .profile__row
-          .profile__input_container
-            input#profileFormUserName.profile__input_big(
+          .profile__field
+            input#profileFormUserName.profile__field_big(
               type='text'
               placeholder=""
               form='profileForm'
               autocomplete='off'
-              value='Шахворостов Сергей Владимирович'
+              value=''
               pattern='^[a-zA-ZА-Яа-яЁё ]+$'
               title='Имя может содержать только буквы'
               name='username'
               required
             )
             label(for='profileFormUserName') ФИО
-            .invalid-tooltip Введите Ваше ФИО
+            //.invalid-tooltip Введите Ваше ФИО
 
-          .profile__input_container
-            select#profileFormYearBirth.profile__input_middle(
+          .profile__field.profile__field_middle
+            select#profileFormYearBirth.profile__field_select(
               form='profileForm'
               title='Выберите свой год рождения'
               name='year-birth'
@@ -70,7 +70,7 @@ mixin form-profile
               option 1981
               option 1980
 
-            .invalid-tooltip Введите Ваше ФИО
+            //.invalid-tooltip Введите Ваш год рождения
 
 
 

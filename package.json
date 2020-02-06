@@ -8,6 +8,7 @@
     "gulp-cached": "^1.1.1",
     "gulp-htmlmin": "^5.0.1",
     "imagemin-jpeg-recompress": "^6.0.0",
+    "jquery.scrollbar": "^0.2.11",
     "pug": "^2.0.3"
   },
   "devDependencies": {

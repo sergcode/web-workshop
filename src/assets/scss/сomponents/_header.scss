@@ -1,5 +1,4 @@
 header {
-
   width: 100%;
   max-width: 1170px;
   left: 50%;
@@ -12,8 +11,8 @@ header {
   background-color: $white-rgba-three;
   backdrop-filter: blur(4px);
   nav {
-    padding-left: 134px;
-    padding-right: 134px;
+    max-width: 500px;
+    margin: auto;
     ul {
       grid-area: menu;
       display: grid;

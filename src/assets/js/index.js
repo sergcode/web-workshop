@@ -10,6 +10,11 @@
 import 'jquery';
 
 /**
+ * @module JQuery.mCustomScrollbar
+ */
+import '../../../node_modules/jquery.scrollbar/jquery.scrollbar.min'
+
+/**
  * @module Example
  */
 import './example';
