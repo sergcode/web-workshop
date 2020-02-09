@@ -3,8 +3,10 @@
   padding-top: 59px;
   text-align: center;
   &__wrapper {
-    padding: 48px 1.5rem 73px;
-    margin: auto;
+    padding: 48px 0 74px;
+    margin: auto -15px;
+    display: flex;
+    flex-wrap: wrap;
   }
   &__form {
     position: relative;
@@ -24,11 +26,13 @@
     position: relative;
     text-align: center;
     width: 100%;
-    max-width: 518px;
+    max-width: 520px;
     min-width: 270px;
-    padding-right: 5px;
-    padding-left: 5px;
     margin: 0 auto 25px;
+
+    &:last-child {
+      margin: 0 auto 0;
+    }
 
     label {
       margin-bottom: 0;
@@ -93,6 +97,21 @@
         .jq-selectbox__select-text {
           color: $black-two;
           font-size: 20px;
+          padding-top: 22px;
+        }
+        ~ label {
+          transform: translateY(-30%);
+          font-size: 14px;
+        }
+        &:valid {
+
+          ~ label {
+
+            transform: translateY(-30%);
+            font-size: 14px;
+
+          }
+
         }
       }
       &.dropdown {
@@ -120,7 +139,6 @@
           padding: 0 10px 0 10px;
         }
         &__select-text {
-          line-height: 58px;
           text-align: center;
           font-size: 24px;
           color: $grey-two;
@@ -154,7 +172,7 @@
         &__dropdown {
           border-radius: 5px;
           border: none;
-          box-shadow: 0 3px 8px 0 $black-rgba-six;
+          box-shadow: 0 3px 8px 0 $black-rgba-one;
           height: 301px;
           font: 20px $roboto-light;
           &:before {
@@ -209,6 +227,25 @@
 }
 
 .jq-selectbox {
+  &.focused {
+    .jq-selectbox__select {
+      border: 1px solid $blue-one;
+    }
+    ~ label {
+      transform: translateY(-30%);
+      font-size: 14px;
+    }
+    &:valid {
+
+      ~ label {
+
+        transform: translateY(-30%);
+        font-size: 14px;
+
+      }
+
+    }
+  }
   select {
     position: absolute;
     top: 0;

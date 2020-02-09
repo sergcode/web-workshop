@@ -1,0 +1,207 @@
+.skill-level {
+  position: relative;
+  text-align: center;
+  padding-bottom: 81px;
+  font-family: $roboto-light;
+  color: $black-one;
+  h2 {
+    margin: 18px 0 61px;
+  }
+  .irs--big {
+    .irs-line {
+      height: 15px;
+      background-color: transparent;
+      background: $grey-five;
+      border: none;
+      border-radius: 0;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 11px;
+        background: url("#{$way-img}range-slider-bg.png") no-repeat center / cover;
+        z-index: 10000;
+      }
+    }
+    &.irs-with-grid {
+      margin-right: -11px;
+      margin-left: -11px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 10px;
+        background: $white-one;
+        z-index: 10;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 10px;
+        background: $white-one;
+        z-index: 10;
+      }
+    }
+  }
+  .irs--big .irs-handle {
+    top: 35px;
+    width: 22px;
+    height: 25px;
+    border: none;
+    border-top-width: 0;
+    box-shadow: none;
+    border-radius: 0 0 3px 3px;
+    position: relative;
+    background: none;
+    z-index: 100000;
+    &:hover {
+      background: none;
+      &:before {
+        content: url('data:image/svg+xml;utf8,<svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2908 15.345C23.2908 21.416 18.3678 26.338 12.2948 26.338C6.2228 26.338 1.2998 21.416 1.2998 15.345C1.2998 11.131 3.6728 7.47503 7.1538 5.63003L10.8678 1.91703C11.6478 1.13703 12.9118 1.13703 13.6918 1.91703L17.3758 5.60103C20.8888 7.43603 23.2908 11.107 23.2908 15.345Z" fill="rgb(67,89,147)" stroke="rgb(67,89,147)"/></svg>');
+      }
+    }
+    &:before {
+      content: url('data:image/svg+xml;utf8,<svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2908 15.345C23.2908 21.416 18.3678 26.338 12.2948 26.338C6.2228 26.338 1.2998 21.416 1.2998 15.345C1.2998 11.131 3.6728 7.47503 7.1538 5.63003L10.8678 1.91703C11.6478 1.13703 12.9118 1.13703 13.6918 1.91703L17.3758 5.60103C20.8888 7.43603 23.2908 11.107 23.2908 15.345Z" fill="white" stroke="rgb(176,176,176)"/></svg>');
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 22px;
+      height: 25px;
+      display: block;
+      cursor: pointer;
+    }
+    &.state_hover {
+      background: none;
+      &:before {
+        content: url('data:image/svg+xml;utf8,<svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2908 15.345C23.2908 21.416 18.3678 26.338 12.2948 26.338C6.2228 26.338 1.2998 21.416 1.2998 15.345C1.2998 11.131 3.6728 7.47503 7.1538 5.63003L10.8678 1.91703C11.6478 1.13703 12.9118 1.13703 13.6918 1.91703L17.3758 5.60103C20.8888 7.43603 23.2908 11.107 23.2908 15.345Z" fill="rgb(67,89,147)" stroke="rgb(67,89,147)"/></svg>');
+      }
+    }
+    > i {
+      display: none;
+    }
+  }
+  .irs--big .irs-bar {
+    top: 33px;
+    height: 15px;
+    border: none;
+    background: rgb(204,177,241); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(204,177,241,1) 0%, rgba(137,134,195,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(204,177,241,1) 0%,rgba(137,134,195,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(204,177,241,1) 0%,rgba(137,134,195,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccb1f1', endColorstr='#8986c3',GradientType=1 ); /* IE6-9 */
+    box-shadow: none;
+
+    &--single {
+      border-radius: 0;
+    }
+  }
+  .irs-grid {
+    top: 0;
+    bottom: auto;
+    height: 50px;
+    margin-top: -20px;
+  }
+
+  .irs-grid-text {
+    bottom: 10px;
+    color: $black-two;
+    font-size: 13px;
+    font-family: $roboto-light;
+    margin-left: -4px !important;
+    width: 100%;
+    max-width: 190px;
+    display: block;
+    white-space: normal;
+    text-align: left;
+    line-height: 17px;
+    visibility: visible !important;
+    &.js-grid-text-1 {
+      padding-right: 20px;
+    }
+    &.js-grid-text-3 {
+      visibility: hidden !important;
+    }
+    &:last-child {
+      margin-left: -20% !important;
+    }
+  }
+  .irs-handle {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    cursor: default;
+    z-index: 1;
+  }
+  .irs-grid-pol {
+    top: auto;
+    bottom: 0;
+    z-index: 10000000;
+    background-color: transparent;
+    border-left: 1px dashed $grey-three;
+    height: 15px;
+    margin-bottom: -3px;
+    &:first-child {
+      height: 20px;
+      margin-bottom: -10px;
+    }
+    &[style="left: 25%"] {
+      height: 17px;
+      margin-bottom: -10px;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        border-left: 2px solid $white-one;
+        bottom: 0;
+        left: -1px;
+        margin-bottom: -10px;
+        z-index: 100000000;
+      }
+    }
+    &[style="left: 50%"] {
+      height: 16px;
+      margin-bottom: -8px;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        border-left: 2px solid $white-one;
+        bottom: 0;
+        left: -1px;
+        margin-bottom: -10px;
+        z-index: 100000000;
+      }
+    }
+    &[style="left: 75%"] {
+      visibility: hidden;
+    }
+    &.small {
+      display: none;
+    }
+  }
+  .irs-single {
+    display: none;
+  }
+  .irs-min, .irs-max {
+    visibility: visible !important;
+    text-align: left;
+    background-color: transparent !important;
+    color: transparent;
+
+    span {
+      font-family: $roboto-light;
+      font-size: 13px;
+      color: $black-two;
+    }
+  }
+}

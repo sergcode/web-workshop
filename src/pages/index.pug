@@ -9,9 +9,69 @@ block content
     h1 Анкета
     #profile.profile
       .container
-        +icon-after-title
+        +icon-profile-title
         h2 Личная информация
         +form-profile
 
+    #experience.experience
+      .container
+        +icon-experience-title
+        h2 Расскажите о своем опыте
+        .experience__wrapper
+          .experience__wrapper_col
+            .experience__checkbox
+              input#experienceBEM(type='checkbox' checked)
+              lablel(for='experienceBEM') БЭМ/OOCSS
+            .experience__checkbox
+              input#experienceStylus(type='checkbox' checked)
+              lablel(for='experienceStylus') Stylus/LESS/SASS
+            .experience__checkbox
+              input#experienceSVG(type='checkbox' checked)
+              lablel(for='experienceSVG') Работаю с SVG
 
+          .experience__wrapper_col
+            .experience__checkbox
+              input#experienceSemantic(type='checkbox' checked)
+              lablel(for='experienceSemantic') Верстаю семантично
+            .experience__checkbox
+              input#experienceES(type='checkbox' checked)
+              lablel(for='experienceES') ES2015/ES2016
+            .experience__checkbox
+              input#experienceGulp(type='checkbox' checked)
+              lablel(for='experienceGulp') Gulp/GRUNT
+
+          .experience__wrapper_col
+            .experience__checkbox
+              input#experienceWebpack(type='checkbox' checked)
+              lablel(for='experienceWebpack') Webpack
+            .experience__checkbox
+              input#experienceJQuery(type='checkbox' checked)
+              lablel(for='experienceJQuery') jQuery
+            .experience__checkbox
+              input#experienceGit(type='checkbox' checked)
+              lablel(for='experienceGit') Использую Git
+
+    #skillLevelJs.skill-level
+      .container
+        +icon-js-title
+        h2 Уровень владения JavaScript
+        .skill-level__rangeslider
+          input.js-range-slider(
+            type="text"
+            name=''
+            value=''
+          )
+
+    #aboutMe.about-me
+      .container
+        +icon-about-me-title
+        h2 Расскажите о себе
+        h3 Напишите несколько предложений, чем привлекла наша вакансия&nbsp;
+          br
+          | и что вы ожидаете от работы у нас.
+        .about-me__textarea
+          textarea(name='textarea' placeholder='Понравилась тем, что...' required)
+
+    .done
+      +button-done('submit', 'button', 'Готово')
 

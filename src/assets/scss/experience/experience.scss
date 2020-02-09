@@ -1,0 +1,65 @@
+.experience {
+  position: relative;
+  text-align: center;
+  padding-bottom: 135px;
+  color: $black-one;
+  h2 {
+    margin: 22px 0 47px;
+  }
+  &__wrapper {
+    display: flex;
+    margin: auto;
+    text-align: left;
+    font-family: $roboto-light;
+    &_col {
+      max-width: 100%;
+      flex-basis: 0;
+      flex-grow: 1;
+      position: relative;
+      width: 100%;
+      &:first-child {
+        margin-right: 35px;
+      }
+      &:nth-child(2) {
+        margin-left: 35px;
+        margin-right: 35px;
+      }
+      &:last-child {
+        margin-left: 35px;
+      }
+    }
+  }
+  &__checkbox {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .jq-checkbox {
+      border: 1px solid $blue-one;
+      box-shadow: none;
+      background: none;
+      margin: 0 7px 0 0;
+      width: 20px; height: 20px;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background: $blue-two;
+      }
+      &.checked {
+        background: $blue-one;
+        .jq-checkbox__div {
+          width: 10px;
+          height: 8px;
+          margin: 3px 0 0 4px;
+          border-bottom: 2px solid $white-one;
+          border-left: 2px solid $white-one;
+          transform: rotate(-50deg);
+        }
+      }
+      input {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

@@ -10,9 +10,19 @@
 import 'jquery';
 
 /**
+ * @module ScrollTo
+ */
+import './scrollto/scrollto'
+
+/**
  * @module JQuery.mCustomScrollbar
  */
 import '../../../node_modules/jquery.scrollbar/jquery.scrollbar.min'
+
+/**
+ * @module Rangeslider
+ */
+import '../../../node_modules/ion-rangeslider/js/ion.rangeSlider.min'
 
 /**
  * @module Example

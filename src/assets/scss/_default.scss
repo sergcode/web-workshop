@@ -1,3 +1,7 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden !important;
   position: relative;
@@ -91,3 +95,26 @@ form {
 
 }
 
+.done {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 16px 32px;
+  background: $blue-one;
+  border: 1px solid transparent;
+  color: $white-one;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: $roboto-light;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: transparent;
+    border: 1px solid $blue-one;
+    color: $blue-one;
+  }
+}

@@ -8,8 +8,10 @@
     "gulp-cached": "^1.1.1",
     "gulp-htmlmin": "^5.0.1",
     "imagemin-jpeg-recompress": "^6.0.0",
+    "ion-rangeslider": "^2.3.1",
     "jquery.scrollbar": "^0.2.11",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "rangeslider.js": "^2.3.3"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",

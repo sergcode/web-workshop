@@ -9,9 +9,8 @@ mixin form-profile
               placeholder=""
               form='profileForm'
               autocomplete='off'
-              value=''
-              pattern='^[a-zA-ZА-Яа-яЁё ]+$'
-              title='Имя может содержать только буквы'
+              value='Шахворостов Сергей Владимирович'
+              title=''
               name='username'
               required
             )
@@ -21,13 +20,13 @@ mixin form-profile
           .profile__field.profile__field_middle
             select#profileFormYearBirth.profile__field_select(
               form='profileForm'
-              title='Выберите свой год рождения'
+              title=''
               name='year-birth'
               required
               placeholder=''
               data-placeholder='Год рождения'
             )
-              option(selected)
+              option
               option 2020
               option 2019
               option 2018
@@ -59,7 +58,7 @@ mixin form-profile
               option 1992
               option 1991
               option 1990
-              option 1989
+              option(selected) 1989
               option 1988
               option 1987
               option 1986
@@ -70,8 +69,47 @@ mixin form-profile
               option 1981
               option 1980
 
+            label(for='profileFormUserCity') Год рождения
             //.invalid-tooltip Введите Ваш год рождения
 
+          .profile__field
+            input#profileFormUserCity.profile__field_big(
+              type='text'
+              placeholder=""
+              form='profileForm'
+              autocomplete='off'
+              value='Россия, Кемеровская обл., г. Кемерово'
+              title=''
+              name='city'
+              required
+            )
+            label(for='profileFormUserCity') Место проживания
+            //.invalid-tooltip Введите Ваше ФИО
 
+          .profile__field
+            input#profileFormUserSkype.profile__field_big(
+              type='text'
+              placeholder=""
+              form='profileForm'
+              autocomplete='off'
+              value='serega-shakhvoro100v'
+              title=''
+              name='skype'
+              required
+            )
+            label(for='profileFormUserSkype') Skype
+            //.invalid-tooltip Введите Ваше ФИО
 
-
+          .profile__field
+            input#profileFormUserEmail.profile__field_big(
+              type='email'
+              placeholder=""
+              form='profileForm'
+              autocomplete='off'
+              value='shsv100@ya.ru'
+              title=''
+              name='email'
+              required
+            )
+            label(for='profileFormUserEmail') E-mail
+            //.invalid-tooltip Введите Ваше ФИО
