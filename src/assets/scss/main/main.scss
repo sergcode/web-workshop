@@ -1,4 +1,4 @@
-main {
+.main {
   width: 100%;
   position: relative;
   overflow: hidden !important;
@@ -6,6 +6,9 @@ main {
   padding-top: 194px;
   padding-bottom: 74px;
   background: $white-one url("#{$way-img}background-body.png") no-repeat center top 80px / 1170px;
+  transition: transform .3s ease-in-out;
+  filter: blur(0);
+  transform: translateX(0);
 
   h1 {
     font-family: $roboto-thin;
@@ -15,6 +18,16 @@ main {
     line-height: normal;
     margin: 0;
     text-align: center;
+    @media only screen and (max-width: 480px) {
+      font-size: 50px;
+    }
+  }
+
+  &.show {
+
+    filter: blur(3px);
+    transform: translateX(-380px);
+
   }
 
 }

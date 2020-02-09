@@ -15,14 +15,14 @@ import 'jquery';
 import './scrollto/scrollto'
 
 /**
- * @module JQuery.mCustomScrollbar
+ * @module Rangeslider
  */
-import '../../../node_modules/jquery.scrollbar/jquery.scrollbar.min'
+import '../../../node_modules/ion-rangeslider/js/ion.rangeSlider.min'
 
 /**
  * @module Rangeslider
  */
-import '../../../node_modules/ion-rangeslider/js/ion.rangeSlider.min'
+import '../../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min'
 
 /**
  * @module Example

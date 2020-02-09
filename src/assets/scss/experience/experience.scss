@@ -3,6 +3,9 @@
   text-align: center;
   padding-bottom: 135px;
   color: $black-one;
+  @media only screen and (max-width: 559.98px) {
+    padding-bottom: 81px;
+  }
   h2 {
     margin: 22px 0 47px;
   }
@@ -11,6 +14,20 @@
     margin: auto;
     text-align: left;
     font-family: $roboto-light;
+    @media only screen and (max-width: 655px) {
+      flex-wrap: wrap;
+      padding-left: 40px;
+    }
+    @media only screen and (max-width: 540px) {
+      padding-left: 0;
+    }
+    @media only screen and (max-width: 440px) {
+      justify-content: center;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+    }
     &_col {
       max-width: 100%;
       flex-basis: 0;
@@ -19,13 +36,75 @@
       width: 100%;
       &:first-child {
         margin-right: 35px;
+        @media only screen and (max-width: 740px) {
+          margin-right: 15px;
+        }
+        @media only screen and (max-width: 655px) {
+          margin-right: 15px;
+          flex: 0 0 40%;
+          max-width: 40%;
+          margin-bottom: 40px;
+        }
+        @media only screen and (max-width: 500px) {
+          flex: 0 0 50%;
+          max-width: 50%;
+          margin-right: 0;
+          padding-right: 15px;
+        }
+        @media only screen and (max-width: 440px) {
+          flex: auto;
+          max-width: 220px;
+          margin-right: 0;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
       }
       &:nth-child(2) {
         margin-left: 35px;
         margin-right: 35px;
+        @media only screen and (max-width: 740px) {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        @media only screen and (max-width: 655px) {
+          margin-right: 0;
+          flex: 0 0 40%;
+          max-width: 40%;
+          margin-bottom: 40px;
+        }
+        @media only screen and (max-width: 500px) {
+          flex: 0 0 50%;
+          max-width: 50%;
+          margin-left: 0;
+          padding-left: 15px;
+        }
+        @media only screen and (max-width: 440px) {
+          flex: auto;
+          max-width: 220px;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
       }
       &:last-child {
         margin-left: 35px;
+        @media only screen and (max-width: 740px) {
+          margin-left: 15px;
+        }
+        @media only screen and (max-width: 655px) {
+          flex: 0 0 40%;
+          max-width: 40%;
+          margin-left: 0;
+        }
+        @media only screen and (max-width: 500px) {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+        @media only screen and (max-width: 440px) {
+          flex: auto;
+          max-width: 220px;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
       }
     }
   }

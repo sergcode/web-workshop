@@ -1,14 +1,19 @@
 header.header.scrolling-navbar
   .container
-    nav(role='navigation')
-      ul#nav-menu
-        li
-          a.active(href='#profile' title='Указать личную информацию' role='link') Личная информация
-        li
-          a(href='#experience' title='Рассказать о своем опыте' role='link') Опыт
-        li
-          a(href='#skillLevelJs' title='Указать уровень владения JavaScript' role='link') JavaScript
-        li
-          a(href='#aboutMe' title='Рассказать о себе' role='link') О себе
+    nav.nav-menu(role='navigation')
+      .nav-menu__collapse
+        ul#nav-menu
+          li
+            a.active(href='#profile' title='Указать личную информацию' role='link') Личная информация
+          li
+            a(href='#experience' title='Рассказать о своем опыте' role='link') Опыт
+          li
+            a(href='#skillLevelJs' title='Указать уровень владения JavaScript' role='link') JavaScript
+          li
+            a(href='#aboutMe' title='Рассказать о себе' role='link') О себе
 
+      .nav-menu__button-collapse
+        button.hamburger.hamburger--spring(type='button' title='Открыть меню' role='button')
+          span.hamburger-box
+            span.hamburger-inner
 

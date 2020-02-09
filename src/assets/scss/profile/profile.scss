@@ -2,14 +2,20 @@
   position: relative;
   padding-top: 59px;
   text-align: center;
+
   &__wrapper {
     padding: 48px 0 74px;
     margin: auto -15px;
     display: flex;
     flex-wrap: wrap;
+    @media only screen and (max-width: 559.98px) {
+      margin: auto;
+    }
   }
+
   &__form {
     position: relative;
+
     fieldset {
       border: none;
       margin: 0;
@@ -17,11 +23,13 @@
       padding: 0;
     }
   }
+
   &__row {
     display: flex;
     flex-wrap: wrap;
     position: relative;
   }
+
   &__field {
     position: relative;
     text-align: center;
@@ -29,6 +37,9 @@
     max-width: 520px;
     min-width: 270px;
     margin: 0 auto 25px;
+    @media only screen and (max-width: 559.98px) {
+      max-width: 100%;
+    }
 
     &:last-child {
       margin: 0 auto 0;
@@ -48,6 +59,7 @@
       color: $grey-two;
       text-align: center;
     }
+
     input {
       position: relative;
       outline: none;
@@ -63,6 +75,15 @@
       color: $black-two;
       font-family: $roboto-regular;
       padding: 22px 10px 12px;
+      @media only screen and (max-width: 559.98px) {
+        font-size: 16px;
+      }
+      @media only screen and (max-width: 360px) {
+        font-size: 14px;
+      }
+      @media only screen and (max-width: 340px) {
+        font-size: 12px;
+      }
 
       &:focus {
 
@@ -79,6 +100,7 @@
         }
 
       }
+
       &:valid {
 
         ~ label {
@@ -93,16 +115,28 @@
 
     &_select {
       width: 100%;
+
       &.changed {
         .jq-selectbox__select-text {
           color: $black-two;
           font-size: 20px;
           padding-top: 22px;
+          @media only screen and (max-width: 559.98px) {
+            font-size: 16px;
+          }
+          @media only screen and (max-width: 360px) {
+            font-size: 14px;
+          }
+          @media only screen and (max-width: 340px) {
+            font-size: 12px;
+          }
         }
+
         ~ label {
           transform: translateY(-30%);
           font-size: 14px;
         }
+
         &:valid {
 
           ~ label {
@@ -114,11 +148,13 @@
 
         }
       }
+
       &.dropdown {
         .jq-selectbox__trigger-arrow {
           transform: translateY(-50%) rotate(-180deg);
         }
       }
+
       .jq-selectbox {
         select {
           position: absolute;
@@ -130,6 +166,7 @@
           padding: 0;
           opacity: 0;
         }
+
         &__select {
           border: 1px solid $grey-one;
           border-radius: 5px;
@@ -138,6 +175,7 @@
           height: 58px;
           padding: 0 10px 0 10px;
         }
+
         &__select-text {
           text-align: center;
           font-size: 24px;
@@ -145,6 +183,7 @@
           font-family: $roboto-regular;
           width: 100% !important;
         }
+
         &__trigger {
           border: 0;
           position: absolute;
@@ -152,6 +191,7 @@
           right: 0;
           width: 34px;
           height: 100%;
+
           &-arrow {
             top: 50%;
             right: 15px;
@@ -161,6 +201,7 @@
             height: auto;
             transition: all .1s ease-in-out;
             position: absolute;
+
             &:after {
               content: url('data:image/svg+xml;utf8,<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.763 2.23355L8.61704 7.37955L8.76504 7.52655L7.42404 8.86755L7.27604 8.71955L7.12804 8.86755L5.78804 7.52655L5.93604 7.37955L0.790039 2.23355L2.13004 0.893555L7.27604 6.03855L12.422 0.893555L13.763 2.23355Z" fill="blue"/></svg> ');
               top: 0;
@@ -169,15 +210,17 @@
             }
           }
         }
+
         &__dropdown {
           border-radius: 5px;
           border: none;
           box-shadow: 0 3px 8px 0 $black-rgba-one;
           height: 301px;
           font: 20px $roboto-light;
+
           &:before {
             content: '';
-            width: calc(100% - 17px) ;
+            width: calc(100% - 17px);
             height: 32px;
             background: $white-one;
             display: block;
@@ -185,24 +228,29 @@
             top: 0;
             z-index: 10;
           }
+
           &:after {
             content: '';
-            width: calc(100% - 17px) ;
+            width: calc(100% - 17px);
             height: 32px;
             background: $white-one;
             display: block;
             position: absolute;
             bottom: 0;
           }
+
           ul {
             max-height: 300px !important;
-            padding: 37px 0 0;
+            padding: 37px 0 31px;
+
             li {
               color: $blue-one;
+
               &:hover {
                 background-color: #435993;
                 color: $white-one;
               }
+
               &.selected {
                 background-color: $grey-one;
               }
@@ -219,8 +267,10 @@
       width: 100%;
       max-width: 318px;
       min-width: 270px;
+      @media only screen and (max-width: 440px) {
+        max-width: 100%;
+      }
     }
-
 
 
   }
@@ -231,10 +281,12 @@
     .jq-selectbox__select {
       border: 1px solid $blue-one;
     }
+
     ~ label {
       transform: translateY(-30%);
       font-size: 14px;
     }
+
     &:valid {
 
       ~ label {
@@ -246,6 +298,7 @@
 
     }
   }
+
   select {
     position: absolute;
     top: 0;
@@ -256,4 +309,21 @@
     padding: 0;
     opacity: 0;
   }
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 17px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: $grey-one;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: $blue-one;
 }
