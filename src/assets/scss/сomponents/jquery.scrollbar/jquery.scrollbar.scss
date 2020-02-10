@@ -1,7 +1,9 @@
 .scroll-wrapper {
   overflow: hidden !important;
-  padding: 0 !important;
+  padding: 18px 19px !important;
   position: relative;
+  border: 1px solid $grey-four;
+  border-radius: 5px;
 }
 
 .scroll-wrapper > .scroll-content {
@@ -74,7 +76,7 @@
   height: 100%;
   right: 2px;
   top: 0;
-  width: 8px;
+  width: 5px;
 }
 
 .scrollbar-inner > .scroll-element .scroll-element_outer {
@@ -97,10 +99,10 @@
   transition: all .2s ease;
 }
 
-.scrollbar-inner > .scroll-element .scroll-element_track { background-color: $grey-three; }
-.scrollbar-inner > .scroll-element .scroll-bar { background-color: $grey-three; cursor: pointer;}
-.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: $grey-three; opacity: .7;}
-.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: $grey-three; opacity: .7;}
+.scrollbar-inner > .scroll-element .scroll-element_track { background-color: transparent; }
+.scrollbar-inner > .scroll-element .scroll-bar { background-color: $grey-one; cursor: pointer;}
+.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: $blue-one; opacity: .7;}
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: $blue-one; opacity: .7;}
 
 
 /* update scrollbar offset if both scrolls are visible */

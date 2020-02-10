@@ -3,7 +3,9 @@
 
 /* mCustomScrollbar */
 @import './jquery.mCustomScrollbar/jquery.mCustomScrollbar';
-//@import '../../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css';
+
+/* jquery.scrollbar */
+@import "../../../node_modules/jquery.scrollbar/sass/jquery.scrollbar";
 
 @import 'custom-styles';
 

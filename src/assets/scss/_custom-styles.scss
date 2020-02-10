@@ -2,18 +2,16 @@
 @import './variables';
 @import './fonts';
 @import './color-theme';
-@import './theme';
 @import './default';
 @import './jquery.form.styler/jquery.form.styler';
 @import './jquery.form.styler/jquery.form.styler.theme';
+@import './ionRangeSlider.ide/ionRangeSlider.ide';
 @import './ionRangeSlider.ide/ionRangeSlider.ide';
 
 /* Components */
 @import './сomponents/jquery.scrollbar/jquery.scrollbar';
 @import './сomponents/grid';
-@import './сomponents/button';
 @import './сomponents/header';
-@import './сomponents/footer';
 
 /* Body-content style */
 @import './main/main';

@@ -20,9 +20,14 @@ import './scrollto/scrollto'
 import '../../../node_modules/ion-rangeslider/js/ion.rangeSlider.min'
 
 /**
- * @module Rangeslider
+ * @module jquery.mCustomScrollbar
  */
 import '../../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min'
+
+/**
+ * @module jquery.scrollbar
+ */
+import '../../../node_modules/jquery.scrollbar/jquery.scrollbar.min'
 
 /**
  * @module Example
